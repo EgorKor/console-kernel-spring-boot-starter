@@ -1,11 +1,8 @@
-package ru.korovin.core.impl;
+package ru.korovin.console.kernel.core;
 
-import ru.korovin.core.interfaces.Command;
+import ru.korovin.console.kernel.core.interfaces.Command;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CommandsRegistry {
     private final Map<String, Command> commands = new HashMap<>();

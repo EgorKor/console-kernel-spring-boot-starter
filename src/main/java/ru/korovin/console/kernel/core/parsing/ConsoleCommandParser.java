@@ -1,11 +1,10 @@
-package ru.korovin.core.impl.parsing;
+package ru.korovin.console.kernel.core.parsing;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.korovin.annotations.ConsoleParam;
-import ru.korovin.core.impl.CommandsRegistry;
-import ru.korovin.core.impl.ParamDefinition;
-import ru.korovin.core.interfaces.Command;
-import ru.korovin.core.interfaces.CommandParser;
+import ru.korovin.console.kernel.annotations.ConsoleParam;
+import ru.korovin.console.kernel.core.CommandsRegistry;
+import ru.korovin.console.kernel.core.interfaces.Command;
+import ru.korovin.console.kernel.core.interfaces.CommandParser;
 
 import java.lang.reflect.Method;
 import java.util.*;

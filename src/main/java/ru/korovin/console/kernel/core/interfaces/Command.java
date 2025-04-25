@@ -1,7 +1,7 @@
-package ru.korovin.core.interfaces;
+package ru.korovin.console.kernel.core.interfaces;
 
-import ru.korovin.annotations.ConsoleMethod;
-import ru.korovin.core.impl.ParamDefinition;
+import ru.korovin.console.kernel.annotations.ConsoleMethod;
+import ru.korovin.console.kernel.core.parsing.ParamDefinition;
 
 import java.lang.reflect.Method;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package ru.korovin.config;
+package ru.korovin.console.kernel.autoconfiguration;
 
 
 import org.slf4j.Logger;
@@ -9,11 +9,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Role;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
-import ru.korovin.core.impl.CommandsRegistry;
-import ru.korovin.core.impl.listening.ConsoleCommandListener;
-import ru.korovin.core.impl.parsing.ConsoleCommandParser;
-import ru.korovin.processing.ConsoleKernelAnnotationsBeanPostProcessor;
-import ru.korovin.processing.ConsoleKernelListenerRunner;
+import ru.korovin.console.kernel.core.CommandsRegistry;
+import ru.korovin.console.kernel.postprocessor.ConsoleKernelAnnotationsBeanPostProcessor;
+import ru.korovin.console.kernel.postprocessor.ConsoleKernelListenerRunner;
+import ru.korovin.console.kernel.core.listening.ConsoleCommandListener;
+import ru.korovin.console.kernel.core.parsing.ConsoleCommandParser;
 
 @Role(BeanDefinition.ROLE_INFRASTRUCTURE)
 @AutoConfiguration

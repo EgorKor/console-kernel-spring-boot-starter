@@ -1,8 +1,10 @@
-package ru.korovin.core.impl;
+package ru.korovin.console.kernel.core;
 
 import lombok.Builder;
-import ru.korovin.annotations.ConsoleMethod;
-import ru.korovin.core.interfaces.Command;
+import ru.korovin.console.kernel.core.interfaces.Command;
+import ru.korovin.console.kernel.annotations.ConsoleMethod;
+import ru.korovin.console.kernel.core.parsing.ParamDefinition;
+
 import java.lang.reflect.Method;
 import java.util.Map;
 
@@ -11,7 +13,7 @@ public class ConsoleCommand implements Command {
     private Class<?> commandParentClass;
     private Method commandMethod;
     private Object commandComponentInstance;
-    private Map<String,ParamDefinition> paramDefinitions;
+    private Map<String, ParamDefinition> paramDefinitions;
     private ConsoleMethod consoleMethod;
     private String command;
 

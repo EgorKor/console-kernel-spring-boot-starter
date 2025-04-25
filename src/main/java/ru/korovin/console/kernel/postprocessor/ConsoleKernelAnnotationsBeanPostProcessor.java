@@ -1,17 +1,17 @@
-package ru.korovin.processing;
+package ru.korovin.console.kernel.postprocessor;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.core.annotation.Order;
 import org.springframework.util.ReflectionUtils;
-import ru.korovin.annotations.CommandComponent;
-import ru.korovin.annotations.ConsoleMethod;
-import ru.korovin.annotations.ConsoleParam;
-import ru.korovin.core.impl.CommandsRegistry;
-import ru.korovin.core.impl.ConsoleCommand;
-import ru.korovin.core.impl.ParamDefinition;
-import ru.korovin.core.interfaces.Command;
+import ru.korovin.console.kernel.annotations.CommandComponent;
+import ru.korovin.console.kernel.annotations.ConsoleMethod;
+import ru.korovin.console.kernel.annotations.ConsoleParam;
+import ru.korovin.console.kernel.core.CommandsRegistry;
+import ru.korovin.console.kernel.core.ConsoleCommand;
+import ru.korovin.console.kernel.core.parsing.ParamDefinition;
+import ru.korovin.console.kernel.core.interfaces.Command;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

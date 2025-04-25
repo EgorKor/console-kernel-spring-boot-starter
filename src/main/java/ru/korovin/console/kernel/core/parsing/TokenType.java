@@ -1,4 +1,4 @@
-package ru.korovin.core.impl.parsing;
+package ru.korovin.console.kernel.core.parsing;
 
 public enum TokenType {
     COMMAND,

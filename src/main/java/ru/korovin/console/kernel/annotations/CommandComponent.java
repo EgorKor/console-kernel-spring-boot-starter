@@ -1,4 +1,4 @@
-package ru.korovin.annotations;
+package ru.korovin.console.kernel.annotations;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;

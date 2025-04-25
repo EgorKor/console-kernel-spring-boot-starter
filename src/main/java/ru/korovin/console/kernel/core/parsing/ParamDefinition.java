@@ -1,7 +1,7 @@
-package ru.korovin.core.impl;
+package ru.korovin.console.kernel.core.parsing;
 
 import lombok.Getter;
-import ru.korovin.annotations.ConsoleParam;
+import ru.korovin.console.kernel.annotations.ConsoleParam;
 
 import java.lang.reflect.Parameter;
 import java.util.HashMap;
