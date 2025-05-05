@@ -7,10 +7,10 @@ right from terminal.
 Create command component bean
 
 ````java
-import ru.korovin.console.kernel.annotations.CommandComponent;
+import annotations.io.github.EgorKor.console.kernel.CommandComponent;
 
 @CommandComponent
-public class Commands{
+public class Commands {
     ...
 }
 ````
@@ -18,13 +18,13 @@ public class Commands{
 Declare console method in command component class
 
 ```java
-import ru.korovin.console.kernel.annotations.CommandComponent;
-import ru.korovin.console.kernel.annotations.ConsoleMethod;
+import annotations.io.github.EgorKor.console.kernel.CommandComponent;
+import annotations.io.github.EgorKor.console.kernel.ConsoleMethod;
 
 @CommandComponent
 public class Commands {
     @ConsoleMethod
-    public void printNumber(Integer value){
+    public void printNumber(Integer value) {
         System.out.println(value);
     }
 }
@@ -47,9 +47,9 @@ checkParam    command1      command2      exit          help          printNumbe
 Use annotation to control parameter parsing behaviour
 
 ```java
-import ru.korovin.console.kernel.annotations.CommandComponent;
-import ru.korovin.console.kernel.annotations.ConsoleMethod;
-import ru.korovin.console.kernel.annotations.ConsoleParam;
+import annotations.io.github.EgorKor.console.kernel.CommandComponent;
+import annotations.io.github.EgorKor.console.kernel.ConsoleMethod;
+import annotations.io.github.EgorKor.console.kernel.ConsoleParam;
 
 @CommandComponent
 public class Commands {
@@ -57,9 +57,9 @@ public class Commands {
     public void printNumber(@ConsoleParam(required = false, defaultValue = "10") Integer value) {
         System.out.println(value);
     }
-    
+
     @ConsoleMethod(command = "print_string")
-    public void printString(@ConsoleParam("value_alias") String value){
+    public void printString(@ConsoleParam("value_alias") String value) {
         System.out.println(value);
     }
 }

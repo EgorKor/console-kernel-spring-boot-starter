@@ -1,7 +1,7 @@
-package ru.korovin.console.kernel.core.interfaces;
+package io.github.EgorKor.console.kernel.core.interfaces;
 
-import ru.korovin.console.kernel.annotations.ConsoleMethod;
-import ru.korovin.console.kernel.core.parsing.ParamDefinition;
+import io.github.EgorKor.console.kernel.annotations.ConsoleMethod;
+import io.github.EgorKor.console.kernel.core.parsing.ParamDefinition;
 
 import java.lang.reflect.Method;
 import java.util.Map;

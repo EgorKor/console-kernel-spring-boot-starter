@@ -1,17 +1,17 @@
-package ru.korovin.console.kernel.postprocessor;
+package io.github.EgorKor.console.kernel.postprocessor;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.core.annotation.Order;
 import org.springframework.util.ReflectionUtils;
-import ru.korovin.console.kernel.annotations.CommandComponent;
-import ru.korovin.console.kernel.annotations.ConsoleMethod;
-import ru.korovin.console.kernel.annotations.ConsoleParam;
-import ru.korovin.console.kernel.core.CommandsRegistry;
-import ru.korovin.console.kernel.core.ConsoleCommand;
-import ru.korovin.console.kernel.core.parsing.ParamDefinition;
-import ru.korovin.console.kernel.core.interfaces.Command;
+import io.github.EgorKor.console.kernel.annotations.CommandComponent;
+import io.github.EgorKor.console.kernel.annotations.ConsoleMethod;
+import io.github.EgorKor.console.kernel.annotations.ConsoleParam;
+import io.github.EgorKor.console.kernel.core.CommandsRegistry;
+import io.github.EgorKor.console.kernel.core.ConsoleCommand;
+import io.github.EgorKor.console.kernel.core.parsing.ParamDefinition;
+import io.github.EgorKor.console.kernel.core.interfaces.Command;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

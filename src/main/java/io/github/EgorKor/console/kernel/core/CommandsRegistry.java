@@ -1,6 +1,6 @@
-package ru.korovin.console.kernel.core;
+package io.github.EgorKor.console.kernel.core;
 
-import ru.korovin.console.kernel.core.interfaces.Command;
+import io.github.EgorKor.console.kernel.core.interfaces.Command;
 
 import java.util.*;
 

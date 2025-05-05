@@ -1,9 +1,9 @@
-package ru.korovin.console.kernel.postprocessor;
+package io.github.EgorKor.console.kernel.postprocessor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
-import ru.korovin.console.kernel.core.interfaces.CommandListener;
+import io.github.EgorKor.console.kernel.core.interfaces.CommandListener;
 
 @Order
 public class ConsoleKernelListenerRunner implements CommandLineRunner {

@@ -1,5 +1,8 @@
-package ru.korovin.console.kernel.core.listening;
+package io.github.EgorKor.console.kernel.core.listening;
 
+import io.github.EgorKor.console.kernel.core.CommandsRegistry;
+import io.github.EgorKor.console.kernel.core.interfaces.Command;
+import io.github.EgorKor.console.kernel.core.interfaces.CommandParser;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.jline.reader.Candidate;
@@ -9,9 +12,6 @@ import org.jline.reader.LineReaderBuilder;
 import org.jline.reader.impl.history.DefaultHistory;
 import org.jline.terminal.Terminal;
 import org.jline.terminal.TerminalBuilder;
-import ru.korovin.console.kernel.core.CommandsRegistry;
-import ru.korovin.console.kernel.core.interfaces.Command;
-import ru.korovin.console.kernel.core.interfaces.CommandParser;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,8 @@
-package ru.korovin.console.kernel.core.listening;
+package io.github.EgorKor.console.kernel.core.listening;
 
+import io.github.EgorKor.console.kernel.core.CommandsRegistry;
+import io.github.EgorKor.console.kernel.core.interfaces.CommandListener;
+import io.github.EgorKor.console.kernel.core.interfaces.CommandParser;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import net.bytebuddy.ByteBuddy;
@@ -7,9 +10,6 @@ import net.bytebuddy.implementation.InvocationHandlerAdapter;
 import net.bytebuddy.implementation.SuperMethodCall;
 import net.bytebuddy.matcher.ElementMatchers;
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.korovin.console.kernel.core.CommandsRegistry;
-import ru.korovin.console.kernel.core.interfaces.CommandListener;
-import ru.korovin.console.kernel.core.interfaces.CommandParser;
 
 import java.io.OutputStream;
 import java.io.PrintStream;

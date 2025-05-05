@@ -1,10 +1,10 @@
-package ru.korovin.console.kernel.core.parsing;
+package io.github.EgorKor.console.kernel.core.parsing;
 
+import io.github.EgorKor.console.kernel.annotations.ConsoleParam;
+import io.github.EgorKor.console.kernel.core.CommandsRegistry;
+import io.github.EgorKor.console.kernel.core.interfaces.Command;
+import io.github.EgorKor.console.kernel.core.interfaces.CommandParser;
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.korovin.console.kernel.annotations.ConsoleParam;
-import ru.korovin.console.kernel.core.CommandsRegistry;
-import ru.korovin.console.kernel.core.interfaces.Command;
-import ru.korovin.console.kernel.core.interfaces.CommandParser;
 
 import java.lang.reflect.Method;
 import java.util.*;

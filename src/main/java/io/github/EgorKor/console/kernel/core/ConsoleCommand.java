@@ -1,9 +1,9 @@
-package ru.korovin.console.kernel.core;
+package io.github.EgorKor.console.kernel.core;
 
+import io.github.EgorKor.console.kernel.core.interfaces.Command;
 import lombok.Builder;
-import ru.korovin.console.kernel.core.interfaces.Command;
-import ru.korovin.console.kernel.annotations.ConsoleMethod;
-import ru.korovin.console.kernel.core.parsing.ParamDefinition;
+import io.github.EgorKor.console.kernel.annotations.ConsoleMethod;
+import io.github.EgorKor.console.kernel.core.parsing.ParamDefinition;
 
 import java.lang.reflect.Method;
 import java.util.Map;

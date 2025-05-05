@@ -1,6 +1,9 @@
-package ru.korovin.console.kernel.autoconfiguration;
+package io.github.EgorKor.console.kernel.autoconfiguration;
 
 
+import io.github.EgorKor.console.kernel.core.CommandsRegistry;
+import io.github.EgorKor.console.kernel.postprocessor.ConsoleKernelAnnotationsBeanPostProcessor;
+import io.github.EgorKor.console.kernel.postprocessor.ConsoleKernelListenerRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -9,11 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Role;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
-import ru.korovin.console.kernel.core.CommandsRegistry;
-import ru.korovin.console.kernel.postprocessor.ConsoleKernelAnnotationsBeanPostProcessor;
-import ru.korovin.console.kernel.postprocessor.ConsoleKernelListenerRunner;
-import ru.korovin.console.kernel.core.listening.ConsoleCommandListener;
-import ru.korovin.console.kernel.core.parsing.ConsoleCommandParser;
+import io.github.EgorKor.console.kernel.core.listening.ConsoleCommandListener;
+import io.github.EgorKor.console.kernel.core.parsing.ConsoleCommandParser;
 
 @Role(BeanDefinition.ROLE_INFRASTRUCTURE)
 @AutoConfiguration
